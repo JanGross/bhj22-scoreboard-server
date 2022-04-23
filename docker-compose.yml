@@ -17,11 +17,11 @@ services:
       ports:
         - 3306:3306
       volumes:
-        - bandbot-db:/var/lib/mysql
+        - scoreboard-db:/var/lib/mysql
         - ./db:/tmp/db
       environment: 
         MYSQL_ROOT_PASSWORD: ${DB_ROOTPW}
         MYSQL_DATABASE: ${DB_DATABASE}
 
 volumes:
-  bandbot-db:
+  scoreboard-db:
