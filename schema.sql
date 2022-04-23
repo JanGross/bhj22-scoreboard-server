@@ -19,7 +19,7 @@ USE `scoreboard`;
 
 -- Dumping structure for table scoreboard.scores
 CREATE TABLE IF NOT EXISTS `scores` (
-  `username` varchar(50) NOT NULL,
+  `username` varchar(5) NOT NULL,
   `score` int NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `additional_data` json DEFAULT NULL
