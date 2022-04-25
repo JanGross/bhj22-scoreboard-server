@@ -54,3 +54,6 @@ app.post('/scores', (req, res) => {
 app.listen(3030, () => {
     console.log('Server listening on port 3030!');
 });
+setInterval(function () {
+    connection.query('SELECT 1');
+}, 5000);
